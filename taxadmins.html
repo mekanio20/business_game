@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="css/setup.css">
+    <title>Maliýe Bergisi</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="admins">
+                <div class="header">
+                    <h2 class="header__title">Maliýe Bergisi</h2>
+                    <div class="header__logo">
+                        <img src="images/tax.png">
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="main__top">
+                        <p class="main__p">Maliýe Bergisi Limidiňiz Derejäňize Görä Üýtgär.</p>
+                        <p class="main__p">Bergiňiziň Limidi Dolanda Fabrigiň Öndürjiligi Togtadylar.</p>
+                        <p class="main__p">Bergi Limidiňiz: <span id="taxlimit"></span> TMT</p>
+                    </div>
+                    <div class="main__center">
+                        Bergi Borjuňyz: <span id="tax"></span> TMT
+                    </div>
+                    <div class="main__bottom">
+                        <div class="main__input">
+                            <input id="amount" class="input" min="0" type="number" placeholder="Tölenmeli mukdar">
+                            <input class="button" type="button" value="BARSY" onclick="allPay()">
+                        </div>
+                        <button class="main__button" onclick="toPay()">
+                            <div class="button__icon">
+                                <img src="images/tax.png">
+                            </div>
+                            Töleg Etmek
+                        </button>
+                    </div>
+                </div>
+                <audio id="audio" src="./sound/money.mp3"></audio>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/time.js"></script>
+    <script defer src="js/all.js"></script>
+    <script defer src="js/tax.js"></script>
+</body>
+
+</html>

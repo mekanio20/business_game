@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="css/department.css">
+    <title>Bank</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="department">
+                <div class="header">
+                    <h2 class="header__title">Satyş Bölümi</h2>
+                    <div class="header__logo">
+                        <img src="images/statistic.png">
+                    </div>
+                </div>
+                <div class="main">
+                    <h3 class="main__title">Bir Marka Sizden Haryt Almak Isleýär</h3>
+                    <div class="main__logo">
+                        <img id="shirt">
+                    </div>
+                </div>
+                <div class="footer">
+                    <h2 class="footer__title">Firmanyň Teklibi</h2>
+                    <p class="footer__money"><span id="tmt"></span> TMT</p>
+                    <h2 class="footer__title">Indiki Teklibe Galan Wagt</h2>
+                    <div class="time">
+                        <p class="minute">
+                            <span id="minute"></span>
+                            Minut
+                        </p>
+                        <p class="sekund">
+                            <span id="sekunt"></span>
+                            Sekunt
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('tmt').innerHTML = Number(localStorage.getItem('tmt'))
+        document.getElementById('minute').innerHTML = Math.floor(Number(localStorage.getItem('time')) / 60)
+        document.getElementById('sekunt').innerHTML = Number(localStorage.getItem('time')) % 60
+    </script>
+    <script defer src="js/time.js"></script>
+    <script defer src="js/all.js"></script>
+    <script defer src="js/department.js"></script>
+</body>
+
+</html>

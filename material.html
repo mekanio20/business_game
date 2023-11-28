@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="css/material.css">
+    <title>Tekstil</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="material">
+                <div class="header">
+                    <h2 class="header__title">Tekstil</h2>
+                    <div class="header__logo">
+                        <img src="images/material.png">
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="main__info">Eliňizdäki Pul: <span id="money"></span> TMT</div>
+                    <div class="main__info">Materialyň M2-y 1 TMT</div>
+                    <div class="main__input">
+                        <input id="amount" class="input" type="number" min="0" placeholder="Materialyň Mukdary">
+                        <input id="all" class="button" type="button" value="BARSY" onclick="allPay()">
+                    </div>
+                    <div class="main__button" onclick="toPay()">
+                        <div class="button__icon">
+                            <img src="images/material.png">
+                        </div>
+                        Satyn Almak
+                    </div>
+                </div>
+                <audio id="audio" src="./sound/money.mp3"></audio>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/time.js"></script>
+    <script defer src="js/all.js"></script>
+    <script defer src="js/material.js"></script>
+</body>
+
+</html>

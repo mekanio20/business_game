@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="css/fabrik.css">
+    <title>Ambar</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="fabrik">
+                <div class="header">
+                    <h2 class="header__title">Ambar</h2>
+                    <div class="header__logo">
+                        <img src="images/depo3.png">
+                    </div>
+                </div>
+                <div class="main">
+                    <ul class="main__list">
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/depo1.png">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">Garaž / 20.000 TMT</h4>
+                                <p class="item__exp">Ambaryňyzy 500 birlik artdyrar</p>
+                                <p id="2" class="item__level">(Dereje 2 bolmaly)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="20000" class="item__button" type="button" onclick="toBuy(20000, 500, 2)">Satyn al</button>
+                            </div>
+                        </li>
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/depo2.png">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">Kiçi Ambar / 40.000 TMT</h4>
+                                <p class="item__exp">Ambaryňyzy 2.000 birlik artdyrar</p>
+                                <p id="4" class="item__level">(Dereje 4 bolmaly)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="40000" class="item__button" type="button" onclick="toBuy(40000, 2000, 4)">Satyn al</button>
+                            </div>
+                        </li>
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/depo3.png">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">Orta Ambar / 80.000 TMT</h4>
+                                <p class="item__exp">Ambaryňyzy 6.000 birlik artdyrar</p>
+                                <p id="7" class="item__level">(Dereje 7 bolmaly)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="80000" class="item__button" type="button" onclick="toBuy(80000, 6000, 7)">Satyn al</button>
+                            </div>
+                        </li>
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/depo4.png">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">Uly Ambar / 150.000 TMT</h4>
+                                <p class="item__exp">Ambaryňyzy 20.000 birlik artdyrar</p>
+                                <p id="10" class="item__level">(Dereje 10 bolmaly)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="150000" class="item__button" type="button" onclick="toBuy(150000, 20000, 10)">Satyn al</button>
+                            </div>
+                        </li>
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/depo5.png">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">Has uly Ambar / 300.000 TMT</h4>
+                                <p class="item__exp">Ambaryňyzy 60.000 birlik artdyrar</p>
+                                <p id="12" class="item__level">(Dereje 12 bolmaly)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="300000" class="item__button" type="button" onclick="toBuy(300000, 60000, 12)">Satyn al</button>
+                            </div>
+                        </li>
+                        <audio id="audio" src="./sound/money.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/time.js"></script>
+    <script defer src="js/all.js"></script>
+    <script defer src="js/storage.js"></script>
+</body>
+
+</html>

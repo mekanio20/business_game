@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="css/fabrik.css">
+    <title>Ulag Galareýasy</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="fabrik">
+                <div class="header">
+                    <h2 class="header__title">Ulag Galareýasy</h2>
+                    <div class="header__logo">
+                        <img src="images/car3.png">
+                    </div>
+                </div>
+                <div class="main">
+                    <ul class="main__list">
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/car1.png">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">25.000 TMT</h4>
+                                <p class="item__exp">Kiçi Ýük Ulagy</p>
+                                <p class="item__level enabled__level">(+100 dereje bal)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="25000" class="item__button" type="button" onclick="toBuy(25000, 100)">Satyn al</button>
+                            </div>
+                        </li>
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/car2.png">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">50.000 TMT</h4>
+                                <p class="item__exp">Orta Ýük Ulagy</p>
+                                <p class="item__level enabled__level">(+300 dereje bal)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="50000" class="item__button" type="button" onclick="toBuy(50000, 300)">Satyn al</button>
+                            </div>
+                        </li>
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/car3.png">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">150.000 TMT</h4>
+                                <p class="item__exp">Uly Ýük Ulagy</p>
+                                <p class="item__level enabled__level">(+1200 dereje bal)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="150000" class="item__button" type="button" onclick="toBuy(150000, 1200)">Satyn al</button>
+                            </div>
+                        </li>
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/car4.png">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">300.000 TMT</h4>
+                                <p class="item__exp">Gazel Ulagy</p>
+                                <p class="item__level enabled__level">(+3000 dereje bal)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="300000" class="item__button" type="button" onclick="toBuy(300000, 3000)">Satyn al</button>
+                            </div>
+                        </li>
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/car5.png">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">600.000 TMT</h4>
+                                <p class="item__exp">Tyr Ulagy</p>
+                                <p class="item__level enabled__level">(+7500 dereje bal)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="600000" class="item__button" type="button" onclick="toBuy(600000, 7500)">Satyn al</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <audio id="audio" src="sound/money.mp3"></audio>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/time.js"></script>
+    <script defer src="js/all.js"></script>
+    <script defer src="js/gallery.js"></script>
+</body>
+
+</html>

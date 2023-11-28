@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="css/fabrik.css">
+    <title>Fabrik</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="fabrik">
+                <div class="header">
+                    <h2 class="header__title">Fabrik</h2>
+                    <div class="header__logo">
+                        <img src="images/factory.png">
+                    </div>
+                </div>
+                <div class="main">
+                    <ul class="main__list">
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/person1.svg">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">Şägirt / 10.000 TMT</h4>
+                                <p class="item__exp">Şägirt Sekuntda / 1 Önüm çykarýar</p>
+                                <p id="1" class="item__level">(Dereje 1 bolmaly)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="10000" class="item__button" type="button" onclick="toBuy(10000, 1, 1)">Işe al</button>
+                            </div>
+                        </li>
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/person2.svg">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">Işçi / 25.000 TMT</h4>
+                                <p class="item__exp">Işçi Sekuntda / 5 Önüm çykarýar</p>
+                                <p id="4" class="item__level">(Dereje 4 bolmaly)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="25000" class="item__button" type="button" onclick="toBuy(25000, 4, 5)">Işe al</button>
+                            </div>
+                        </li>
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/person3.svg">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">Halypa / 100.000 TMT</h4>
+                                <p class="item__exp">Halypa Sekuntda / 25 Önüm çykarýar</p>
+                                <p id="7" class="item__level">(Dereje 7 bolmaly)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="100000" class="item__button" type="button" onclick="toBuy(100000, 7, 25)">Işe al</button>
+                            </div>
+                        </li>
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/person4.svg">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">Müdir / 250.000 TMT</h4>
+                                <p class="item__exp">Müdir Sekuntda / 70 Önüm çykarýar</p>
+                                <p id="10" class="item__level">(Dereje 10 bolmaly)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="250000" class="item__button" type="button" onclick="toBuy(250000, 10, 70)">Işe al</button>
+                            </div>
+                        </li>
+                        <li class="main__item">
+                            <div class="item__left">
+                                <img src="images/person5.svg">
+                            </div>
+                            <div class="item__center">
+                                <h4 class="item__title">CEO / 500.000 TMT</h4>
+                                <p class="item__exp">CEO Sekuntda / 250 Önüm çykarýar</p>
+                                <p id="12" class="item__level">(Dereje 12 bolmaly)</p>
+                            </div>
+                            <div class="item__right">
+                                <button id="500000" class="item__button" type="button" onclick="toBuy(500000, 12, 250)">Işe al</button>
+                            </div>
+                        </li>
+                        <audio id="audio" src="./sound/new.mp3"></audio>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/time.js"></script>
+    <script defer src="js/all.js"></script>
+    <script defer src="js/fabrik.js"></script>
+</body>
+
+</html>

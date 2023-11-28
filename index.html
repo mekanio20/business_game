@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Business Game</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="index">
+                <a href="./register.html" class="settings"><img class="settings" src="./images/settings.png"></a>
+                <header class="header">
+                    <img class="header__logo" src="images/logo.png">
+                    <h1 id="factoryName" class="header__title">X TEKSTIL firmasy</h1>
+                </header>
+                <main class="main">
+                    <div class="main__info">
+                        <div class="main__left">
+                            <ul class="main__list">
+                                <li class="main__item">
+                                    <img class="__icon" src="images/money.png">
+                                    <p id="money" class="__desc"></p>
+                                </li>
+                                <li class="main__item">
+                                    <img class="__icon" src="images/tshirt1.png">
+                                    <p id="tshirt" class="__desc"></p>
+                                </li>
+                                <li class="main__item">
+                                    <img class="__icon" src="images/factory.png">
+                                    <p id="sekunt" class="__desc"></p>
+                                </li>
+                                <li class="main__item">
+                                    <img class="__icon" src="images/material.png">
+                                    <p id="material" class="__desc"></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main__right">
+                            <ul class="main__list">
+                                <li class="main__item">
+                                    <img class="__icon" src="images/star.png">
+                                    <p id="level" class="__desc"></p>
+                                </li>
+                                <li class="main__item">
+                                    <img class="__icon" src="images/depo.png">
+                                    <p id="storage" class="__desc"></p>
+                                </li>
+                                <li class="main__item">
+                                    <img class="__icon" src="images/statistic.png">
+                                    <p id="statistic" class="__desc"></p>
+                                </li>
+                                <li class="main__item">
+                                    <img class="__icon" src="images/tax.png">
+                                    <p id="tax" class="__desc"></p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button id="btn" class="main__button" onclick="toSell()">Önümi sat</button>
+                    <audio id="audio" src="./sound/money.mp3"></audio>
+                </main>
+                <footer class="footer">
+                    <div class="footer__left">
+                        <a href="./fabrik.html" class="footer__item">
+                            <img class="__icon" src="images/factory.png">
+                            <p class="__desc">FABRIK</p>
+                        </a>
+                        <a href="./storage.html" class="footer__item">
+                            <img class="__icon" src="images/depo.png">
+                            <p class="__desc">AMBAR</p>
+                        </a>
+                        <a href="./taxadmins.html" class="footer__item">
+                            <img class="__icon" src="images/tax.png">
+                            <p class="__desc">MALIÝE BERGISI</p>
+                        </a>
+                        <a href="./bank.html" class="footer__item">
+                            <img class="__icon" src="images/bank.png">
+                            <p class="__desc">BANK</p>
+                        </a>
+                    </div>
+                    <div class="footer__right">
+                        <a href="./department.html" class="footer__item">
+                            <img class="__icon" src="images/statistic.png">
+                            <p class="__desc">SATYŞ BÖLÜMI</p>
+                        </a>
+                        <a href="./material.html" class="footer__item">
+                            <img class="__icon" src="images/material.png">
+                            <p class="__desc">TEKSTIL</p>
+                        </a>
+                        <a href="./gallery.html" class="footer__item">
+                            <img class="__icon" src="images/car3.png">
+                            <p class="__desc">ULAG GALAREÝASY</p>
+                        </a>
+                        <a href="#" class="footer__item">
+                            <img class="__icon" src="images/buy.png">
+                            <p class="__desc">SATYN ALMAK</p>
+                        </a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.getElementById('factoryName').innerHTML = 
+        `${localStorage.getItem("factoryName")} TEKSTIL firmasy`
+    </script>
+    <script defer src="js/time.js"></script>
+    <script defer src="js/all.js"></script>
+    <script defer src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="css/setup.css">
+    <title>Bank</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="admins">
+                <div class="header">
+                    <h2 class="header__title">Bank</h2>
+                    <div class="header__logo">
+                        <img src="images/bank.png">
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="main__top">
+                        <p class="main__p">Bankymyza Hoş Geldiňiz...</p>
+                        <p class="main__p">Banka Bolan Bergiňiz Her 2 Minutdan %2 Göterim Goýular.</p>
+                        <p class="main__p">Banka Bolan Bergiňiz: <span id="credit"></span> TMT</p>
+                    </div>
+                    <div class="main__center">
+                        Kredit Limidiňiz: <span id="creditlimit"></span> TMT
+                    </div>
+                </div>
+                <div class="footer">
+                    <input id="amount" min="0" class="footer__input" type="number">
+                    <div class="footer__buttons">
+                        <button class="kredit__btn" onclick="kredit()">Kredit Al</button>
+                        <button class="pay__btn" onclick="pay()">Töleg Etmek</button>
+                    </div>
+                </div>
+                <audio id="audio" src="./sound/money.mp3"></audio>
+            </div>
+        </div>
+    </div>
+    <script defer src="js/time.js"></script>
+    <script defer src="js/all.js"></script>
+    <script defer src="js/bank.js"></script>
+</body>
+
+</html>
